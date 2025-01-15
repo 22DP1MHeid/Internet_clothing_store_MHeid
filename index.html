@@ -3,12 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>INTERNET CLOTHING SHOP</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
-    <p>INTERNET CLOTHING SHOP </p>
+    <div></div>
+    <nav>
+        <div class="hamburger" onclick="openModal()">&#9776;
+            <div class="line">Home</div>
+            <div class="line">Apparel</div>
+        </div>
+        <ul class="navbar">
+            <li><a href="#">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">About Us</a>
+                <div class="dropdown-content">
+                    <a href="#">Our Team</a>
+                    <a href="#">Our Story</a>
+                    <a href="#">Mission & Vision</a>
+                </div>
+            </li>
+            <li><a href="#">Contact</a></li>
+            <li onclick="darkMode()"><a href="#">Dark Mode</a></li>
+            <input type="text" placeholder="Search..">
+        </ul>
+    </nav>
+    
+    <h1>INTERNET CLOTHING SHOP </h1>
 
 </body>
 </html>

@@ -1,9 +1,13 @@
 p {
-    color: #e9efed;
+    color: #000000;
 }
 
 body {
-    background-color: #060908;
+    background-color: #e9efed;
+}
+
+h1 {
+    color: #000000;
 }
 
 .primary {
@@ -17,3 +21,336 @@ body {
 .accent {
     color: #83759f;;
 } 
+
+/* formats the logo for the site */
+.logo{
+    border-radius: 200px;
+    width: 100px;
+  }
+  
+  .banner {
+  
+  }
+
+/* formats the navigation bar */
+.navbar {
+    list-style-type: none;
+    background-color: #000000e0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Navbar items */
+  .navbar li {
+    position: relative; /* For dropdown positioning */
+    margin: 0;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  /* Hover effect for the links */
+  .navbar a:hover {
+    background-color: #575757;
+  }
+
+  /* Dropdown content hidden by default */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%;
+  }
+  
+  /* Dropdown links */
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Hover effect for dropdown links */
+  .dropdown-content a:hover {
+    background-color: #575757;
+  }
+  
+  /* Show dropdown when hovering on parent */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Dropdown button styling */
+  .dropbtn {
+    cursor: pointer;
+  }
+    
+  /* Hamburger izvēlne */
+  .hamburger {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+    }
+  
+    .hamburger {
+        display: block;
+    }
+  
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+  
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .header h1 {
+        font-size: 28px;
+    }
+  
+    .header p {
+        font-size: 16px;
+    }
+  
+    .card {
+        width: 100%;
+    }
+  }
+
+  /* Modālais logs */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5); /* Black with opacity */
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal-content {
+    background-color: rgba(0, 0, 0, 0.705);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 500px;  
+    max-height: 80vh; 
+    overflow-y: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  .modal h2 {
+    color: white;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+    
+  
+    
+  
+  /* style and margins for flexbox elements*/
+  .flex-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: #000000;
+    width: 270px;
+    height: auto;
+    margin: 10px;
+    border-radius: 15px;
+  }
+  
+  .card-image {
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .car-name {
+    color: #ffffff;
+    font-size: 30px;
+  }
+  
+  
+  
+  
+  
+  /* Images for flexboxes */
+  .piece-1 {
+    background-image: url('/workspaces/Web_Project/Images/top1.jpg');
+  }
+  
+  .piece-2 {
+    background-image: url('/workspaces/Web_Project/Images/top2.jpg');
+  }
+  
+  .piece-3 {
+    background-image: url('/workspaces/Web_Project/Images/top3.jpg');
+  }
+  
+  .piece-4 {
+    background-image: url('/workspaces/Web_Project/Images/top4.jpg');
+  }
+  
+  .piece-5 {
+    background-image: url('/workspaces/Web_Project/Images/bottom1.jpg');
+  }
+  
+  .piece-6 {
+    background-image: url('/workspaces/Web_Project/Images/bottom2.jpg');
+  }
+  
+  .piece-7 {
+    background-image: url('/workspaces/Web_Project/Images/bottom3.jpg');
+  }
+  
+  .piece-8 {
+    background-image: url('/workspaces/Web_Project/Images/bottom4.jpg');
+  }
+  
+  .piece-9 {
+    background-image: url('/workspaces/Web_Project/Images/bottom5.jpg');
+  }
+  
+  div {
+  text-align: center;
+  height: 150px;
+  transition-property: color;
+  transition-duration: 1s;
+  }
+  
+  div:hover {
+  background-color: #424242;
+  }
+  
+  button {
+  color: white;
+  background-color: rgba(19, 139, 187, 0.993);
+  font-size: small;
+  border-radius: 5px;
+  transition-property: color;
+  }
+  
+  button:hover {
+  color:rgb(0, 0, 0);
+  }
+  
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  }
+  
+  li {
+  display: inline-block;
+  font-weight: 700;
+  margin: 5px;
+  transition-property: background-color;
+  transition-property: font-size;
+  transition-duration: 0.5s;
+  }
+  
+  li:hover {
+  background-color: #222831;
+  font-size: 20px;
+  }
+  
+  
+  
+  
+  
+  /* footer format */
+  footer {
+  background-color: #222831;
+  margin-top: 100px;
+  }
+  
+  .footer {
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 100;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  }
+  
+
+
+
+
+  .dark-mode {
+    background-color: #060908;
+  }
+
+  .dark-mode p {
+    color: white;
+  }
+  
+  .dark-mode h1 {
+    color: white
+  }
+  
+  .dark-mode h2 {
+    color: white
+  }
+  
+  .dark-mode aside {
+    color: white
+  }
+  
+  .dark-mode footer {
+    background-color: #000000;
+  }
