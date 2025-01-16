@@ -28,9 +28,12 @@ h1 {
     width: 100px;
   }
   
-  .banner {
-  
-  }
+.bannerimage {
+  width: 100%;
+  background-image: url();
+  background-color: purple;
+  background-position: center;
+}
 
 /* formats the navigation bar */
 .navbar {
@@ -264,7 +267,7 @@ h1 {
     background-image: url('/workspaces/Web_Project/Images/bottom5.jpg');
   }
   
-  div {
+  section div {
   text-align: center;
   height: 150px;
   transition-property: color;
@@ -299,13 +302,11 @@ h1 {
   font-weight: 700;
   margin: 5px;
   transition-property: background-color;
-  transition-property: font-size;
   transition-duration: 0.5s;
   }
   
   li:hover {
   background-color: #222831;
-  font-size: 20px;
   }
   
   
